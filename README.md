@@ -15,7 +15,7 @@ Components
 
 Acralyzer is the frontend analysis tools. It needs to be connected to a backend storage server.
 
-The default storage endpoint for Acralyzer is [acra-storage](http://github.com/ACRA/acra-storage).
+The default storage endpoint for Acralyzer is [acra-storage](http://github.com/ul2002/acra-storage).
 
 Both Acralyzer and acra-storage are [CouchApps](http://couchapp.org).
 CouchApps are web applications made of HTML/Javascript files and served directly by a [CouchDB](http://couchdb.apache.org).
@@ -31,5 +31,16 @@ A CouchDB instance:
 You can install one on your own server or your workstation for testing purposes. See http://couchdb.apache.org/#download.
 The easiest way is to subscribe to a dedicated CouchDB hosting like IrisCouch or Cloudant. Both provide free service for low usage. Cloudant offers a more secured user management but a less recent CouchDB version (fully compatible with Acralyzer though). Because of this security layer, we would recommend using Cloudant as a free hosting service.
 The build-couchdb project also provides an easy way to build couchdb from its sources.
+
+Deploy acra-storage
+==========
+Deploy the first couchapp using the following command lines:
+
+```
+$ cd acra-storage
+```
+```
+$ couchapp push http://[login]:[password]@[your.couchdb.host]:[port]/acra-storage
+```
 
 
