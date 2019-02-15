@@ -1,10 +1,4 @@
 
-Get acra-storage  from Github
-==========
-```
-$ git clone https://github.com/ul2002/acra-storage.git
-```
-
 Requirements
 ==========
 + Git to fetch the projects repositories from Github.
@@ -16,6 +10,12 @@ A CouchDB instance:
 You can install one on your own server or your workstation for testing purposes. See http://couchdb.apache.org/#download.
 The easiest way is to subscribe to a dedicated CouchDB hosting like IrisCouch or Cloudant. Both provide free service for low usage. Cloudant offers a more secured user management but a less recent CouchDB version (fully compatible with Acralyzer though). Because of this security layer, we would recommend using Cloudant as a free hosting service.
 The build-couchdb project also provides an easy way to build couchdb from its sources.
+
+Get acra-storage  from Github
+==========
+```
+$ git clone https://github.com/ul2002/acra-storage.git
+```
 
 Deploy acra-storage
 ==========
